@@ -1,0 +1,84 @@
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+}
+
+window#waybar {
+    background: #1e1e2e;
+    color: #cdd6f4;
+}
+
+#custom-ws1,
+#custom-ws2,
+#custom-ws3,
+#custom-ws4 {
+    padding: 0 12px;
+    margin: 0 2px;
+    color: #cdd6f4;
+    background: transparent;
+    border-radius: 8px;
+}
+
+#custom-ws1:hover,
+#custom-ws2:hover,
+#custom-ws3:hover,
+#custom-ws4:hover {
+    background: #45475a;
+}
+
+#cpu,
+#memory,
+#pulseaudio,
+#network,
+#clock,
+#window {
+    padding: 0 10px;
+}
+
+#workspaces button {
+    padding: 0 10px;
+    margin: 0 3px;
+    border-radius: 8px;
+    color: #cdd6f4;
+    background: transparent;
+}
+
+#workspaces button.active {
+    background: #89b4fa;
+    color: #1e1e2e;
+}
+
+#workspaces .taskbar-window {
+    padding: 0 4px;
+    margin: 0 2px;
+}
+
+#workspaces .taskbar-window.active {
+    background: #45475a;
+    border-radius: 6px;
+}
+
+#taskbar {
+    margin: 0 10px;
+}
+
+#taskbar button {
+    padding: 0 7px;
+    margin: 0 3px;
+    background: transparent;
+    border-radius: 8px;
+}
+
+#taskbar button.active {
+    background: #45475a;
+}
+
+
+#pulseaudio {
+    padding: 0 10px;
+    border-radius: 8px;
+}
+
+#pulseaudio:hover {
+    background: #45475a;
+}

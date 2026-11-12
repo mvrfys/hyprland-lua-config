@@ -1,0 +1,75 @@
+
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+
+    "modules-center": [
+        "wlr/taskbar"
+    ],
+
+    "modules-right": [
+        "pulseaudio",
+        "cpu",
+        "memory",
+        "network",
+        "clock"
+    ],
+
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "persistent-workspaces": {
+            "*": [1, 2, 3, 4]
+        },
+        "active-only": false
+    },
+
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 24,
+        "tooltip": false,
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "all-outputs": false
+    },
+
+    "cpu": {
+        "format": "CPU {usage}%"
+    },
+
+    "memory": {
+        "format": "RAM {}%"
+    },
+
+    "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰖁 MUTED",
+
+    "format-icons": {
+        "default": [
+            "󰕿",
+            "󰖀",
+            "󰕾"
+        ]
+    },
+
+    "scroll-step": 5,
+    "on-click": "pavucontrol",
+    "tooltip": true
+},
+
+    "network": {
+        "format-wifi": "WIFI {essid}",
+        "format-ethernet": "LAN",
+        "format-disconnected": "OFF"
+    },
+
+    "clock": {
+        "format": "{:%H:%M}"
+    }
+}
+
