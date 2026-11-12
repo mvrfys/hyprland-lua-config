@@ -1,0 +1,58 @@
+# Portable Arch Linux desktop packages (official Arch repositories)
+# Install with: sudo pacman -S --needed $(grep -Ev '^[[:space:]]*(#|$)' packages.txt)
+
+# Base system and boot tools
+base
+linux
+linux-firmware
+intel-ucode
+amd-ucode
+sudo
+nano
+git
+grub
+efibootmgr
+dosfstools
+mtools
+
+# Hyprland desktop
+hyprland
+waybar
+kitty
+fish
+thunar
+firefox
+hyprlock
+
+# Portals, permissions, and session integration
+xdg-desktop-portal
+xdg-desktop-portal-hyprland
+xdg-desktop-portal-gtk
+polkit
+hyprpolkitagent
+xorg-xwayland
+qt5-wayland
+qt6-wayland
+
+# Audio
+pipewire
+pipewire-alsa
+pipewire-pulse
+wireplumber
+pavucontrol
+
+# Network and Bluetooth
+networkmanager
+network-manager-applet
+bluez
+bluez-utils
+upower
+
+# Screenshots, clipboard, and fonts
+grim
+slurp
+wl-clipboard
+ttf-dejavu
+noto-fonts
+noto-fonts-emoji
+ttf-font-awesome
